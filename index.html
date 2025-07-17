@@ -5,29 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Présentation session</title>
     <link rel="stylesheet" href="Assets/Css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- header + navbar début-->
   <header>
-    <img src="images/CODEUR-RANGERS-16-07-2025.png" alt="Logo" class="logo">  
+    <img src="images/CODEUR-RANGERS-16-07-2025.png" alt="Logo" class="headerlogo">  
   </header>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="#presentation">Présentation</a></li>
-      <li><a href="#ressources">Ressources</a></li>
-      <li><a href="#equipe">Équipe</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    
-  <form action="">
-    <div class="search">
-      <span class="search-icon material-symbols-outlined">search</span>
-      <input class="search-input" type="search" placeholder="Rechercher.."></input>
-    </div>
-  </form>
-  </nav>
+<div class="topnav" id="myTopnav">
+  <a href="#presentation">Présentation</a>
+  <a href="#ressources">Ressources</a>
+  <a href="#equipe">Équipe</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 <!-- header + navbar fin-->
 
     <div class="session" id="presentation">
@@ -55,7 +49,6 @@
     </div>
 
     <!-- --------Début du Carousel--------- -->
-    -------Début du Carousel--------- -->
     <div class="module_Eddy"id="ressources" >
 
     <div class="Carousel">
@@ -134,12 +127,14 @@
          </div>
 <!-- --------------Boulettes------------------ -->
         <div class="boulettes">
-          <ul><a href="#Pic_1"><li> </li></a>     <a href="#Pic_4"><li> </li></a>    <a href="#Pic_7"><li> </li></a></ul>
+          <ul><a href="index.html#Pic_1"><li> </li></a>     <a href="index.html#Pic_4"><li> </li></a>    <a href="index.html#Pic_7"><li> </li></a></ul>
         </div>
     
     </div>
-    <!-- ----------Fin du Carousel------------ -->
-<!-- ----------------------Portraits---------------------->
+
+
+<!-- ----------Fin du Carousel------------ -->
+ <!-- ----------------------Portraits---------------------->
 
 <div class="portraits">
   <div class="wrapper">
@@ -211,7 +206,7 @@
         </div>
 <!-- ----------------------Portraits---------------------->
 
-
+    
     <div class="form-contact"id="contact">
       <h1>Formulaire de Contact</h1>
       <form action="#" method="post">
@@ -231,5 +226,16 @@
       <p>© 2025 Session Dev ERN 31-25-02 : Codeur Rangers</p>
     </footer>
     <!-- footer fin-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
   </body>
 </html>
