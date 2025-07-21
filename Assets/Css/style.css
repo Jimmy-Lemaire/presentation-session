@@ -1,3 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 /* Header + navbar début */
 header {
   height: 100px;
@@ -14,9 +30,6 @@ header {
 
 
 .topnav {
-    position: sticky;
-    top: 0px;
-    z-index: 99;
     overflow: hidden;
     background-color: #2c2c2c;
         display: flex;
@@ -48,6 +61,12 @@ header {
     .topnav .icon {
         display: none;
     }
+
+	#myTopnav {
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+	}
 /* Header + navbar fin */
 
 
@@ -89,7 +108,7 @@ video{
     display:grid;
     grid-template-columns: 5fr 1fr;
     gap:20px;
-    padding:30px 10px 0px;
+    padding:30px 0px 0px;
     width: 100%;
 }
 p{
@@ -99,6 +118,7 @@ p{
 }
 .presentation p{
     grid-column: 1;
+	padding: 0px 10px;
 
 }
 #small{
@@ -110,8 +130,6 @@ p{
 }
 
 /*---------------------------------------------Carousel-----------------------------------------------------------------*/
-body{background-color:tomato;}
-
 .module_Eddy
 {
 
@@ -360,73 +378,9 @@ body{background-color:tomato;}
 
 /*---------------------------------------------Carousel-----------------------------------------------------------------*/
 
-
-
-
-/*--------------------------------------------------Carousel-----------------------------------------------------*/
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #ffffff;;
-}
-
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin: 20px;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-.form-contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-contact form label {
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 45px;
-    font-weight: bold;
-    color: #333;
-}
-
-.form-contact form input, .form-contact form textarea {
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #000000;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-footer {
-  height: 50px;
-  background: linear-gradient(90deg, #53b9e7, #f69e07, #e44332, #81b53e);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 700;
-  margin-top: 50px;
-}
-
 /* -----------------------portraits------------------- */
 .portraits
 {
-
 	overflow-y:hidden;
 	overflow-x:scroll;
 	width:100%;
@@ -436,12 +390,11 @@ footer {
 	-ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior:smooth;
-	
 }
 
  .portraits .wrapper
 {
-			display:flex;
+	display:flex;
 	flex-direction:row;
 	width:200%;
 } 
@@ -456,17 +409,12 @@ footer {
 	overflow:hidden;
 	align-content:center;
 	justify-items:center;
-
 	margin-left:10px;
-
-	
+	min-width: 150px;
 }
-
-
 
 .img_solo img
 {
-	
 	max-width:70%;
 	height:auto;
 	left:10px;
@@ -546,28 +494,54 @@ to{
 
 /* -----------------------portraits------------------- */
 
-@media only screen and (max-width : 480px) {
-.logo img{
-   width: calc(100% / 2);
-}
-.presentation{
-    display:flex;
+.form-contact form {
+    display: flex;
     flex-direction: column;
-    margin-top:0px;
-    position: relative;
-    color:#333;
-    background:transparent;
-    grid-row: 2;
-    padding:0px 10px;
-    bottom:0px;
+    align-items: center;
 }
+
+.form-contact form label {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
 }
+
+.form-contact form input, .form-contact form textarea {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+footer {
+  height: 50px;
+  background: linear-gradient(90deg, #53b9e7, #f69e07, #e44332, #81b53e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
 
 @media screen and (max-width: 576px) {
     header{
         height: 70px;
     }
-    .headerlogo{        
+    .headerlogo{
         width: calc(100% / 2);
     }
     .topnav {
@@ -604,17 +578,17 @@ to{
         color:#333;
         background:transparent;
         grid-row: 2;
-        padding:0px 10px;
+        padding:0px 0px;
         bottom:0px;
     }
     div#contact {
-    width: calc(100% / 1.5);
-    margin:auto;
+    	width: calc(100% / 1.5);
+    	margin:auto;
     }
     h1 {
         font-size: 35px;
     }
     .form-contact form label {
-        font-size: 24px;
+        font-size: 1em;
     }
 }
