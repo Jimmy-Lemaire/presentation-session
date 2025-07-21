@@ -118,6 +118,7 @@ p{
 }
 .presentation p{
     grid-column: 1;
+	padding: 0px 10px;
 
 }
 #small{
