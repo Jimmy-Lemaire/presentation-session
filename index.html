@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Présentation session</title>
     <link rel="stylesheet" href="Assets/Css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- header + navbar début-->
@@ -19,7 +18,7 @@
   <a href="#equipe">Équipe</a>
   <a href="#contact">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+  <i class="fa-solid fa-bars"></i>
   </a>
 </div>
 <!-- header + navbar fin-->
@@ -210,13 +209,12 @@
     <div class="form-contact"id="contact">
       <h1>Formulaire de Contact</h1>
       <form action="#" method="post">
-        <label for="name">Nom:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea
-        ><br /><br />
+        <label for="name"><i class="fa-solid fa-user"></i> Nom:</label>
+        <input type="text" id="name" name="name" required/>
+        <label for="email"><i class="fa-solid fa-at"></i> Email:</label>
+        <input type="email" id="email" name="email" required/>
+        <label for="message"><i class="fa-solid fa-keyboard"></i> Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Envoyer</button>
       </form>
@@ -227,6 +225,8 @@
     </footer>
     <!-- footer fin-->
 
+    
+<script src="https://kit.fontawesome.com/11b0093e02.js" crossorigin="anonymous"></script>
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");

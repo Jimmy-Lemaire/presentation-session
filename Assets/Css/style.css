@@ -502,7 +502,7 @@ to{
 
 .form-contact form label {
     text-align: center;
-    margin-top: 5px;
+    margin: 10px 0px;
     font-size: 2em;
     font-weight: bold;
     color: #333;
@@ -510,6 +510,7 @@ to{
 
 .form-contact form input, .form-contact form textarea {
     width: 50%;
+	margin-bottom: 20px;
     padding: 5px;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -586,9 +587,9 @@ footer {
     	margin:auto;
     }
     h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .form-contact form label {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
