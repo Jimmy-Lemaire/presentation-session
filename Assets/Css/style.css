@@ -527,14 +527,25 @@ button {
 }
 
 footer {
-  height: 50px;
+  height: auto;
   background: linear-gradient(90deg, #53b9e7, #f69e07, #e44332, #81b53e);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 17px;
   font-weight: 700;
   margin-top: 50px;
+
+  a {
+	text-decoration: none;
+	padding-bottom: 10px;
+	font-size: 105%;
+	color: #fff;
+  }
+  a:hover {
+	text-decoration: underline;
+  }
 }
 
 
